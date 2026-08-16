@@ -29,8 +29,10 @@ específicamente para esta tarea.
 ```
 proyecto_M1/
 ├── README.md                                    <- este archivo
+├── declaracion-uso-ia.md
 ├── notebook.ipynb                                <- notebook de la entrega (ejecutado)
 └── datos/
+    ├── color/ (Carpeta con las imagenes a color de PlantVillage, debe cargarse directamente ANTES DE EJECUTAR, se encuentra aquí: https://huggingface.co/datasets/Jackieeeeee/plantvillage-raw-color-7f7ecc7)
     ├── dataset_finetuning_plantvillage.jsonl     <- 204 ejemplos instrucción → respuesta
     ├── base_conocimiento_plantvillage.json       <- base de conocimiento cruda, con fuente por clase
     ├── base_conocimiento_plantvillage.csv        <- la misma base, en formato tabla
@@ -40,15 +42,11 @@ proyecto_M1/
 ## 3. Cómo correr el notebook
 
 1. Abre `notebook.ipynb` en Google Colab (recomendado) o localmente con Jupyter.
-2. Activa GPU: `Runtime → Change runtime type → T4 GPU` (en Colab). Sin GPU el
-   fine-tuning es muy lento.
-3. Asegúrate de que la carpeta `datos/` esté en la misma ubicación que el notebook
-   (si subes solo el `.ipynb` a Colab, sube también la carpeta `datos/` a la sesión,
-   o móntala desde Google Drive).
-4. Corre las celdas en orden. La primera celda instala todas las dependencias
-   (`transformers`, `datasets`, `peft`, `accelerate`, `evaluate`, `bitsandbytes`).
+2. Activa GPU: `Runtime → Change runtime type → T4 GPU` (en Colab).
+3. Asegúrate de que la carpeta `datos/` esté en la misma ubicación que el notebook.
+4. Corre las celdas en orden. La primera celda instala todas las dependencias.
 5. El notebook importa el modelo base directamente desde el Hub de Hugging Face
-   (`Qwen/Qwen2.5-0.5B-Instruct`) — no requiere ningún archivo de pesos local.
+   (`Qwen/Qwen2.5-0.5B-Instruct`).
 
 ## 4. Selección y justificación del modelo base
 
