@@ -14,6 +14,8 @@ las 38 clases de PlantVillage pertenece una hoja, y un **recomendador** (NLP,
 esta entrega) que a partir de esa etiqueta genere una recomendación de manejo
 agronómico en español.
 
+<img width="964" height="824" alt="image" src="https://github.com/user-attachments/assets/342486f5-da89-4abd-b9f9-adfb1362d38d" />
+
 Esta entrega M1 cubre solo el recomendador de texto: fine-tuning con LoRA de
 `Qwen2.5-0.5B-Instruct` sobre un dataset de instrucciones construido por el
 equipo. No se usa ninguna imagen para entrenar, solo las etiquetas de
