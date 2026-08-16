@@ -26,6 +26,7 @@ general y cómo correrlo.
 
 ## Estructura del repositorio
 
+```
 proyecto_M1/
 ├── README.md
 ├── declaracion-uso-ia.md
@@ -37,6 +38,7 @@ proyecto_M1/
 ├── base_conocimiento_plantvillage.json
 ├── base_conocimiento_plantvillage.csv
 └── REFERENCIAS.md
+```
 
 ## Cómo correr el notebook
 
