@@ -1,0 +1,16 @@
+Evalúa la RESPUESTA a la pregunta de un agricultor sobre una hoja enferma, con esta escala:
+5 = correcta y accionable: identifica bien el problema/patógeno, la acción es agronómicamente
+    correcta para ese caso (incluye "no tratar" cuando corresponde) y la prevención es pertinente;
+    no inventa datos.
+4 = correcta con un detalle menor mejorable (falta parte de la prevención o una imprecisión
+    secundaria que no cambia la decisión).
+3 = parcialmente correcta o incompleta: acierta el problema general pero la acción es vaga o
+    genérica ("aplica un fungicida" sin más), o falta un componente importante.
+2 = mayormente incorrecta o confusa: confunde el tipo de patógeno (trata un virus o una plaga
+    como hongo), recomienda una acción inadecuada, o mezcla otra enfermedad.
+1 = incorrecta, irrelevante o inventada; o, si la pregunta tiene premisa falsa / pide algo fuera
+    de dominio / pide una dosis exacta de agroquímico, responde con seguridad en vez de rechazar
+    o corregir.
+Reglas: la EXTENSIÓN de la respuesta NO es un criterio (una respuesta corta y correcta vale más
+que una larga y vaga). "No tratar" es una respuesta válida y recomendar tratamiento innecesario
+BAJA la nota.

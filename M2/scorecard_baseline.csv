@@ -1,0 +1,11 @@
+bloque,dimension,puntaje_baseline
+gold,sim_embeddings_prom,0.864
+gold,rougeL_prom,0.333
+gold,llm_juez_prom,3.1
+gold,aciertos_dominio,2/10
+adversarial,llm_juez_prom,3.0
+adversarial,se_abstuvo,0/3
+adversarial,aciertos_dominio,0/3
+sesgos_juez,longitud_spearman_rho,-0.463
+sesgos_juez,autopref_dif_media_juez1_menos_juez2,-0.923
+sesgos_juez,autopref_cohen_kappa,0.0
