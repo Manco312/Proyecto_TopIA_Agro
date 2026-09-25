@@ -1,0 +1,10 @@
+caso,probe,juez_local_1.5B,juez_api_70B
+gold-01-papa-tizon-tardio,BUENA (referencia),4.92,
+gold-01-papa-tizon-tardio,MEDIA/vaga,2.23,
+gold-01-papa-tizon-tardio,POBRE/disparate,1.49,
+gold-ica-11-cafe-roya-co,BUENA (referencia),4.98,
+gold-ica-11-cafe-roya-co,MEDIA/vaga,2.22,
+gold-ica-11-cafe-roya-co,POBRE/disparate,1.26,
+adv-01-alucinacion-cafe,BUENA (referencia),2.97,
+adv-01-alucinacion-cafe,MEDIA/vaga,1.26,
+adv-01-alucinacion-cafe,POBRE/disparate,1.02,

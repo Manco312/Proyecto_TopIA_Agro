@@ -1,0 +1,10 @@
+,0_baseline_sin_rag,0_baseline_sin_rag,0_baseline_sin_rag,1_rag_ingenuo,1_rag_ingenuo,1_rag_ingenuo,2_rag_avanzado,2_rag_avanzado,2_rag_avanzado,3_rag_agentico,3_rag_agentico,3_rag_agentico
+,v1,v1 re-puntuada,v2,v1,v1 re-puntuada,v2,v1,v1 re-puntuada,v2,v1,v1 re-puntuada,v2
+aciertos gold,2/22,2/22,2/22,1/22,1/22,4/22,2/22,2/22,3/22,1/22,1/22,9/22
+aciertos adversariales,0/5,0/5,0/5,1/5,3/5,2/5,0/5,1/5,1/5,2/5,2/5,3/5
+formato ok (gold),21/22,21/22,21/22,4/22,4/22,16/22,9/22,9/22,18/22,9/22,9/22,17/22
+patogeno correcto (gold),1/20,1/20,1/20,2/20,2/20,6/20,11/20,11/20,12/20,10/20,10/20,15/20
+patogeno de otro caso (gold),4/20,4/20,4/20,4/20,4/20,3/20,2/20,2/20,3/20,5/20,5/20,0/20
+cobertura de claves prom (gold),0.15,0.15,0.15,0.18,0.18,0.24,0.41,0.41,0.3,0.38,0.38,0.54
+respuestas con 'Pregunta:' inventada,0,0,0,4,4,0,5,5,0,3,3,0
+latencia s/consulta,8.711,8.711,12.461,9.684,9.684,13.09,9.724,9.724,15.188,22.552,22.552,36.725

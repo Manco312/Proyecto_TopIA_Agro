@@ -1,0 +1,5 @@
+sistema,sim_gold,rougeL_gold,juez_gold,aciertos_gold,puntaje_dominio_gold,aciertos_gold_EXTERNO,juez_adv,abstuvo_adv,aciertos_adv,seg_por_consulta
+0_baseline_sin_rag,0.665,0.225,2.937,2/22,0.555,1/12,2.074,0/5,0/5,12.461
+1_rag_ingenuo,0.667,0.194,2.734,4/22,0.591,2/12,1.48,2/5,2/5,13.09
+2_rag_avanzado,0.703,0.212,2.867,3/22,0.734,2/12,1.368,2/5,1/5,15.188
+3_rag_agentico,0.761,0.282,2.978,9/22,0.849,4/12,1.792,3/5,3/5,36.725
