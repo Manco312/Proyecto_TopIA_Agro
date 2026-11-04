@@ -1,0 +1,71 @@
+{
+ "variante_desplegada": "fp32_cpu",
+ "m5": {
+  "variante": "fp32_cpu",
+  "texto": {
+   "n": 27,
+   "gold_aciertos_dominio": "10/22",
+   "gold_sim_prom": 0.756,
+   "gold_juez_prom": 0.0,
+   "adversariales_se_abstuvo": "3/5",
+   "latencia_generacion_prom_s": 22.86,
+   "valvula_total": 0,
+   "valvula_adv": "0/5",
+   "filtro_activado": 0,
+   "dosis_en_la_salida": 0,
+   "receta_sobre_hoja_sana": 0
+  },
+  "imagen": {
+   "n": 7,
+   "gold_aciertos_dominio": "4/4",
+   "gold_sim_prom": 0.778,
+   "gold_juez_prom": 0.0,
+   "adversariales_se_abstuvo": "1/3",
+   "latencia_generacion_prom_s": 24.3,
+   "valvula_total": 3,
+   "valvula_adv": "2/3",
+   "filtro_activado": 2,
+   "dosis_en_la_salida": 0,
+   "receta_sobre_hoja_sana": 0
+  },
+  "todo": {
+   "n": 34,
+   "gold_aciertos_dominio": "14/26",
+   "gold_sim_prom": 0.76,
+   "gold_juez_prom": 0.0,
+   "adversariales_se_abstuvo": "4/8",
+   "latencia_generacion_prom_s": 23.13,
+   "valvula_total": 3,
+   "valvula_adv": "2/8",
+   "filtro_activado": 2,
+   "dosis_en_la_salida": 0,
+   "receta_sobre_hoja_sana": 0
+  }
+ },
+ "referencias": {
+  "M3 · rag agéntico": {
+   "gold_aciertos_dominio": "9/22",
+   "gold_sim_prom": 0.761,
+   "gold_juez_prom": 2.978,
+   "adversariales_se_abstuvo": "3/5",
+   "latencia_prom_s": 36.725
+  },
+  "M4 · + visión": {
+   "gold_aciertos_dominio": "12/22",
+   "gold_sim_prom": 0.731,
+   "gold_juez_prom": 2.959,
+   "adversariales_se_abstuvo": "3/5",
+   "latencia_prom_s": 36.96
+  },
+  "_m4_con_imagen": {
+   "n": 7,
+   "gold_aciertos_dominio": "2/4",
+   "gold_nota_criterio_prom": 1.0,
+   "clasificador_top1_gold": "3/4",
+   "adversariales_valvula": "2/3",
+   "latencia_prom_s": 16.25,
+   "latencia_vision_prom_s": 0.153
+  }
+ },
+ "nota_dimension_1": "sim calculada sobre respuesta_modelo (corrección de M4 §9)"
+}

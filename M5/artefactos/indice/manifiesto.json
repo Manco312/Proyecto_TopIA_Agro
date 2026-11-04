@@ -1,0 +1,37 @@
+{
+ "construido": "2026-11-02T19:15:03",
+ "version": "m5.0.0",
+ "origen": "C:\\Users\\stron\\Desktop\\Proyecto_TopIA_Agro\\modulos_anteriores\\M4",
+ "documentos": 50,
+ "chunks": 151,
+ "etiquetas": 40,
+ "chunking": {
+  "modo": "seccion",
+  "size": 400,
+  "overlap": 60
+ },
+ "embed_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+ "rerank_id": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+ "clip_id": "openai/clip-vit-base-patch32",
+ "dimension": 384,
+ "regresion_retrieval": {
+  "casos": 6,
+  "fallos": 0
+ },
+ "paridad_chroma": null,
+ "dosis_en_corpus": 0,
+ "sha256": {
+  "catalogo.json": "8f521325edd0dc82",
+  "chunks.json": "558448c33358ac19",
+  "embeddings.npy": "113ba86ff80f376a"
+ },
+ "entorno": {
+  "python": "3.12.10",
+  "sistema": "Windows",
+  "torch": "2.11.0+cu128",
+  "transformers": "5.14.1",
+  "sentence_transformers": "6.0.1",
+  "sklearn": "1.9.0",
+  "numpy": "2.5.1"
+ }
+}

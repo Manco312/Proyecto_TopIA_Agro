@@ -1,0 +1,56 @@
+# Versiones fijadas. En M4 aprendimos por qué: entre dos corridas sólo cambió el build de
+# torch (2.6.0+cu124 -> 2.11.0+cu128) y, con decodificación greedy, un empate resuelto de
+# otra forma en un solo token cambió 3 de 22 respuestas. "Determinista" significa
+# determinista A VERSIONES FIJAS.
+#
+# DOS EXCEPCIONES, las dos a propósito:
+#
+# 1. `torch` NO se fija. El Space corre en **ZeroGPU**, y la imagen de ZeroGPU trae su
+#    propio build de torch emparejado con su driver. Fijarlo aquí instala otra rueda
+#    encima -- y si se fija la de CPU (`--extra-index-url .../whl/cpu`), el Space arranca
+#    sin GPU y nadie se entera hasta que las respuestas tardan un minuto. La versión que
+#    acabe corriendo queda **registrada en el health check** (`entorno.torch`), que es mejor
+#    garantía que una afirmación en un archivo: se observa en vez de prometerse.
+# 2. `gradio` tampoco: en un Space lo gobierna `sdk_version` del front-matter del README,
+#    y fijarlo en los dos sitios es la receta para un arranque roto.
+#    En local: pip install gradio==6.31.0
+
+# --- ZeroGPU ---
+spaces
+
+# --- el redactor desplegado: API de Groq (plan gratuito) ---
+# Sin GROQ_API_KEY el sistema NO se cae: usa el modelo propio de M1 (ver agro/config.py).
+groq==1.7.0
+python-dotenv==1.2.3
+
+# --- el redactor (M1) y el planificador (M3) ---
+transformers==5.14.1
+peft==0.20.0
+accelerate==1.14.0
+safetensors==0.8.0
+huggingface-hub==1.26.0
+
+# --- recuperación (M3) ---
+sentence-transformers==6.0.1  # paraphrase-multilingual-MiniLM-L12-v2 + cross-encoder
+rank-bm25==0.2.2
+scipy==1.18.0
+
+# --- componente visual (M4) ---
+# CRÍTICO: es la versión con la que se guardó artefactos/vision/clasificador_m4.joblib.
+# Con otra, el clasificador puede no cargar o cambiar de resultado sin avisar.
+scikit-learn==1.9.0
+joblib==1.5.3
+pillow==12.3.0
+
+numpy==2.5.1
+
+# --- observabilidad (M5) ---
+wandb==0.30.0
+
+# chromadb y pypdf NO van en producción: el índice viaja ya construido en artefactos/.
+# Se necesitan sólo para volver a construirlo (scripts/construir_indice.py):
+#   pip install pypdf==6.16.2 reportlab chromadb
+# groq tampoco: es un backend opcional del redactor, no el sistema del curso.
+#   pip install groq==1.7.0
+# bitsandbytes sólo para medir la variante int4 en GPU:
+#   pip install bitsandbytes==0.50.0

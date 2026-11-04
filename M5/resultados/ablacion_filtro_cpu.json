@@ -1,0 +1,41 @@
+{
+ "fuente": "eficiencia_cpu_crudo.json",
+ "n_respuestas": 102,
+ "variantes_del_redactor": [
+  "bf16_cpu",
+  "fp32_cpu",
+  "int8_cpu"
+ ],
+ "sin_filtro": {
+  "respuestas_con_dosis": 1,
+  "respuestas_que_recetan_sobre_hoja_sana": 1,
+  "respuestas_modificadas": 0
+ },
+ "con_filtro": {
+  "respuestas_con_dosis": 0,
+  "respuestas_que_recetan_sobre_hoja_sana": 0,
+  "respuestas_modificadas": 2
+ },
+ "casos_tocados": [
+  {
+   "backend": "fp32_cpu",
+   "id": "img-05-tomate-sano-premisa-falsa",
+   "reglas": [
+    "dosis_inventada"
+   ],
+   "retirado": [
+    "La cantidad de fungicida que usaremos depende del nivel de moho o mosaico observado en la pílula foliar, pero generalmente se usa entre 50-100 gramos por hectárea."
+   ]
+  },
+  {
+   "backend": "fp32_cpu",
+   "id": "img-06-cafe-fuera-del-clasificador",
+   "reglas": [
+    "sin_diagnostico_sin_receta"
+   ],
+   "retirado": [
+    "implementamos el manejo de Cenicafé (Programa de renovación de cafetales) para mantener bajo control esta especie y aplica fungicidas cúpricos o sistémicos con registro ICA (Instituto Colombiano de Agricultura - Colombia) si el病情 es severa."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+logs/
+build_space/
+wandb/
+resultados/_log_*.txt
