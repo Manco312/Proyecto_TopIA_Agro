@@ -505,3 +505,27 @@ Cada `*_crudo.json` guarda además el entorno de la corrida (CPU, GPU, hilos de 
 versiones de `torch`, `transformers`, `peft`, `scikit-learn`, `numpy`) y el `revision` de
 cada modelo. El `manifiesto.json` del índice guarda el `sha256` de cada artefacto, y el
 health check los repite en caliente: si lo que corre no es lo que se midió, se ve.
+
+## 13. Evidencias 
+
+Aquí adjuntamos las evidencias del despliegue y la aplicación funcionando, diviendiéndolo en 3 partes, casos fáciles, casos difíciles y casos adversariales. 
+Probamos también las respuestas del modelo cuando solo tienen un input en texto, cuando hay solo imágen, cuando el usuario pone una imagen y una descripción poco contundente y cuando por lo contrario, detalla el cultivo y el problema que cree tener. 
+
+Esto último se realiza con el fin de que el modelo también sea "honesto" con sus limitaciones y le indique al usuario el % de confianza que tiene cada respuesta. 
+
+#### El usuario suministra imagen clara y además da una descrición del tipo de cultivo
+- <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/6b1a4f93-b862-4ad6-abd4-47092de8d5d4" />
+
+#### El usuario suministra una imagen dudosa y una descricpión del tipo de cultivo
+- <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/3362b2ea-baf8-4ca4-b1cf-817bce9a8bff" />
+
+#### El usuario suministra una imagen dudosa y una descrpción poco contundente (no concluye)
+- <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/bca5c6a1-dbe7-4aee-a546-d1915eec1ed3" />
+
+#### El usuario hace una descripción buena de su problema, pero no proporciona imagen 
+- <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/d65060a9-5eaf-48af-9bf4-06150eeb25fb" />
+
+#### EL usuario proporciona una descripción básica del problema y no proporciona imagen 
+- <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/468e2443-da8b-4575-ba8e-66089c315ab4" />
+
+Aquí se presentan 5 diferentes casos que evidencian cómo responde el modelo. 
