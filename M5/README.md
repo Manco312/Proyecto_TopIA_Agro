@@ -271,14 +271,3 @@ pasos del planificador de 1.5B más la redacción— va muy por debajo en una GP
 Con ZeroGPU el backend desplegado es **`fp16_gpu`**, que es el sistema tal cual lo entregó
 M4 y la variante que mejor puntúa de todas las medidas. Si la GPU no estuviera disponible,
 el redactor **degrada solo** a `fp32_cpu` y lo dice en el health check en vez de caerse.
-
-### Lista de verificación antes de la demo
-
-- [ ] Abrir el Space unos minutos antes: **se duerme tras ~48 h sin uso**, y en ZeroGPU la primera petición paga además la asignación de la GPU.
-- [ ] Pestaña **Estado**: `estado: ok`, `zero_gpu.activo: true`, `backend: fp16_gpu`, los `sha256` de los artefactos y el tag de git. Si dice `float32 (degradado desde fp16_gpu)`, la GPU no se asignó.
-- [ ] Vigilar la **cuota de ZeroGPU**: cada consulta consume segundos de GPU. Ensayar con los ejemplos, no en bucle.
-- [ ] Correr los 7 casos de ejemplo y mirar `p50`/`p95` en la pestaña de estado.
-- [ ] Probar 3–5 **fotos de campo reales**. PlantVillage no es el campo, y lo que pase ahí
-      es parte de lo que hay que contar (ver *Límites*).
-- [ ] Abrir la URL desde un teléfono, en otra red.
-- [ ] **Plan B rotulado:** [`resultados/plan_b_casos.md`](resultados/plan_b_casos.md) — los 7 casos ya corridos, con su ruta, su válvula y su filtro.
