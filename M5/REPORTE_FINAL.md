@@ -513,19 +513,19 @@ Probamos también las respuestas del modelo cuando solo tienen un input en texto
 
 Esto último se realiza con el fin de que el modelo también sea "honesto" con sus limitaciones y le indique al usuario el % de confianza que tiene cada respuesta. 
 
-#### El usuario suministra imagen clara y además da una descrición del tipo de cultivo
+- #### El usuario suministra imagen clara y además da una descrición del tipo de cultivo
   <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/6b1a4f93-b862-4ad6-abd4-47092de8d5d4" />
 
-#### El usuario suministra una imagen dudosa y una descricpión del tipo de cultivo
-- <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/3362b2ea-baf8-4ca4-b1cf-817bce9a8bff" />
+- #### El usuario suministra una imagen dudosa y una descricpión del tipo de cultivo
+  <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/3362b2ea-baf8-4ca4-b1cf-817bce9a8bff" />
 
-#### El usuario suministra una imagen dudosa y una descrpción poco contundente (no concluye)
-- <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/bca5c6a1-dbe7-4aee-a546-d1915eec1ed3" />
+- #### El usuario suministra una imagen dudosa y una descrpción poco contundente (no concluye)
+  <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/bca5c6a1-dbe7-4aee-a546-d1915eec1ed3" />
 
-#### El usuario hace una descripción buena de su problema, pero no proporciona imagen 
-- <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/d65060a9-5eaf-48af-9bf4-06150eeb25fb" />
+- #### El usuario hace una descripción buena de su problema, pero no proporciona imagen 
+  <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/d65060a9-5eaf-48af-9bf4-06150eeb25fb" />
 
-#### EL usuario proporciona una descripción básica del problema y no proporciona imagen 
-- <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/468e2443-da8b-4575-ba8e-66089c315ab4" />
+- #### EL usuario proporciona una descripción básica del problema y no proporciona imagen 
+  <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/468e2443-da8b-4575-ba8e-66089c315ab4" />
 
 Aquí se presentan 5 diferentes casos que evidencian cómo responde el modelo. 
