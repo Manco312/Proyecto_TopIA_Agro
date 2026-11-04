@@ -514,7 +514,8 @@ Probamos también las respuestas del modelo cuando solo tienen un input en texto
 Esto último se realiza con el fin de que el modelo también sea "honesto" con sus limitaciones y le indique al usuario el % de confianza que tiene cada respuesta. 
 
 #### El usuario suministra imagen clara y además da una descrición del tipo de cultivo
-- <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/6b1a4f93-b862-4ad6-abd4-47092de8d5d4" />
+-
+  <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/6b1a4f93-b862-4ad6-abd4-47092de8d5d4" />
 
 #### El usuario suministra una imagen dudosa y una descricpión del tipo de cultivo
 - <img width="1240" height="533" alt="image" src="https://github.com/user-attachments/assets/3362b2ea-baf8-4ca4-b1cf-817bce9a8bff" />
